@@ -1,0 +1,66 @@
+<div class="content-wrapper">
+
+    <!-- 内容头部 -->
+    <section class="content-header">
+        <h1>
+            游记攻略管理
+            <small>游记攻略表单</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="all-admin-index.html"><i class="fa fa-dashboard"></i> 首页</a></li>
+            <li><a href="all-travellog-manage-list.html">游记攻略管理</a></li>
+            <li class="active">游记攻略表单</li>
+        </ol>
+    </section>
+    <!-- 内容头部 /-->
+
+    <!-- 正文区域 -->
+    <section class="content">
+
+        <div class="box-body">
+
+                <!--tab页-->
+                <div class="nav-tabs-custom">
+
+                    <!--tab头-->
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#tab-form" data-toggle="tab">表单</a>
+                        </li>
+                    </ul>
+                    <!--tab头/-->
+
+                    <!--tab内容-->
+                    <div class="tab-content">
+
+                        <!--表单内容-->
+						<div class="tab-pane active" id="tab-form">
+                            <link rel="import" href="travellog-manage-edit-tab-form.html?__inline">
+                        </div>
+                        <!--表单内容/-->
+
+                    </div>
+                    <!--tab内容/-->
+                    
+                </div>
+                <!--tab页/-->
+
+
+        <!-- .box-footer
+        <div class="box-footer"></div>
+        -->
+        <!-- /.box-footer-->
+
+        </div>
+
+    </section>
+    <!-- 正文区域 /-->
+
+</div>
+
+<script>
+$(document).ready(function(){
+    // 激活导航位置
+    setSidebarActive("travellog-manage");
+});
+</script>

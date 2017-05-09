@@ -1,0 +1,52 @@
+<div class="row data-type">
+
+    <div class="col-md-2 title">下拉框[标准]</div>
+    <div class="col-md-4 data">
+        <select class="form-control">
+            <option>option 1</option>
+            <option>option 2</option>
+            <option>option 3</option>
+            <option>option 4</option>
+            <option>option 5</option>
+        </select>
+    </div>
+
+    <div class="col-md-2 title">下拉框[输入单选]</div>
+    <div class="col-md-4 data">
+        <select class="form-control select2" style="width: 100%;">
+            <option selected="selected">Alabama</option>
+            <option>Alaska</option>
+            <option disabled="disabled">California</option>
+            <option>Delaware</option>
+            <option>Tennessee</option>
+            <option>Texas</option>
+            <option>Washington</option>
+        </select>
+    </div>
+
+    <div class="col-md-2 title">下拉框[输入多选]</div>
+    <div class="col-md-10 data">
+        <select class="form-control select2" multiple="multiple" data-placeholder="可多选" style="width: 100%;">
+            <option>Alabama</option>
+            <option>Alaska</option>
+            <option>California</option>
+            <option>Delaware</option>
+            <option>Tennessee</option>
+            <option>Texas</option>
+            <option>Washington</option>
+        </select>
+    </div>
+
+
+</div>
+
+
+
+<script>
+
+$(document).ready(function(){
+    // 选择框
+    $(".select2").select2();
+});
+
+</script>

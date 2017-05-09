@@ -1,0 +1,128 @@
+<div class="row data-type">
+    <div class="col-md-2 title">ID</div>
+    <div class="col-md-10 data text">
+        xxxxx
+    </div>
+
+    <div class="col-md-2 title">标题</div>
+    <div class="col-md-10 data">
+        <input type="text" class="form-control" placeholder="标题" value="">
+    </div>
+
+    <div class="col-md-2 title">来源</div>
+    <div class="col-md-10 data">
+        <input type="text" class="form-control" placeholder="来源" value="">
+    </div>
+
+    <div class="col-md-2 title">作者</div>
+    <div class="col-md-10 data">
+        <input type="text" class="form-control" placeholder="作者" value="">
+    </div>
+
+    <div class="col-md-2 title">状态</div>
+    <div class="col-md-10 data line-height36">
+        <div class="form-group form-inline">
+            <div class="checkbox"><label><input type="checkbox" value="1"> 优质</label></div>
+            <div class="checkbox"><label><input type="checkbox" value="2"> 精华</label></div>
+            <div class="checkbox"><label><input type="checkbox" value="3"> 实用</label></div>
+            <div class="checkbox"><label><input type="checkbox" value="4"> 审核</label></div>
+            <div class="checkbox"><label><input type="checkbox" value="5"> 推荐</label></div>
+            <div class="checkbox"><label><input type="checkbox" value="6"> 固顶</label></div>
+        </div>
+    </div>
+
+    <div class="col-md-2 title">收藏数</div>
+    <div class="col-md-10 data">
+        <input type="text" class="form-control" placeholder="收藏数" value="">
+    </div>
+
+    <div class="col-md-2 title">点赞数</div>
+    <div class="col-md-10 data">
+        <input type="text" class="form-control" placeholder="点赞数" value="">
+    </div>
+
+    <div class="col-md-2 title">排序</div>
+    <div class="col-md-10 data">
+        <input type="text" class="form-control" placeholder="排序" value="">
+    </div>
+
+</div>
+
+
+
+<!--游记-->
+<div class="panel panel-default">
+    <div class="panel-heading">游记</div>
+
+    <button type="button" class="btn bg-maroon btn-flat margin" id="btn-dayadd">添加游记</button>
+
+    <div id="dayslist" class="panel-body">
+
+        <div class="box box-success">
+            <div class="box-header with-border">
+                <h3 class="box-title">第xx天游记</h3>
+
+                <div class="box-tools pull-right">
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                    <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                </div>
+            </div>
+            <div class="box-body">
+                <input type="text" class="form-control" placeholder="第xx天游记标题" value=""><br>
+                <textarea class="textarea" placeholder="第xx天游记正文" style="width: 100%; height: 265px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--游记/-->
+
+
+<!--工具栏-->
+<div class="box-tools text-center">
+    <button type="button" class="btn bg-maroon ">保存</button>
+    <button type="button" class="btn bg-default " onclick="javascript:history.back(-1);">返回</button>
+</div>
+<!--工具栏/-->
+
+
+
+<!--游记输入模板-->
+<div id="day-tpl" style="display:none">
+    <div class="box box-success">
+        <div class="box-header with-border">
+            <h3 class="box-title">第xx天游记</h3>
+
+            <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+            </div>
+        </div>
+        <div class="box-body">
+            <input type="text" class="form-control" placeholder="第xx天游记标题" value=""><br>
+            <textarea class="" placeholder="第xx天游记正文" style="width: 100%; height: 265px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+        </div>
+    </div>
+</div>
+<!--游记输入模板/-->
+
+
+<script>
+
+    // 添加每天的游记
+    function addEditer() {
+        var dayEditer = $('#day-tpl').html();
+        $(".panel-body").append(dayEditer);
+
+        $("#dayslist textarea:last").wysihtml5({
+            locale:'zh-CN'
+        });
+    }
+
+    $(document).ready(function () {
+
+        $("#btn-dayadd").click(function () {
+            addEditer();
+        });
+    });
+</script>

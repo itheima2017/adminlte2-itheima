@@ -1,0 +1,127 @@
+<!-- @@master = admin-layout.html-->
+<!-- @@block = content -->
+
+<div class="content-wrapper">
+
+    <!-- 内容头部 -->
+    <section class="content-header">
+        <h1>
+            数据管理
+            <small>数据表单</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> 首页</a></li>
+            <li><a href="#">数据管理</a></li>
+            <li class="active">数据表单</li>
+        </ol>
+    </section>
+    <!-- 内容头部 /-->
+
+    <!-- 正文区域 -->
+    <section class="content">
+
+        <div class="box-body">
+
+                <!--tab页-->
+                <div class="nav-tabs-custom">
+
+                    <!--tab头-->
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#tab-label" data-toggle="tab">label显示</a>
+                        </li>
+                        <li>
+                            <a href="#tab-common" data-toggle="tab">基础控件</a>
+                        </li>
+                        <li>
+                            <a href="#tab-select" data-toggle="tab">下拉框</a>
+                        </li>
+                        <li>
+                            <a href="#tab-date" data-toggle="tab">日期控件</a>
+                        </li>
+                        <li>
+                            <a href="#tab-treetable" data-toggle="tab">树表格</a>
+                        </li>
+                        <li>
+                            <a href="#tab-editer" data-toggle="tab">编辑器</a>
+                        </li>
+                        <li>
+                            <a href="#tab-model" data-toggle="tab">模态窗口</a>
+                        </li>
+                    </ul>
+                    <!--tab头/-->
+
+                    <!--tab内容-->
+                    <div class="tab-content">
+
+                        <!--label显示的内容-->
+						<div class="tab-pane active" id="tab-label">
+                            <link rel="import" href="admin-dataform-tab-label.html?__inline">
+                        </div>
+                        <!--label显示的内容/-->
+
+                        <!--基础控件-->
+						<div class="tab-pane " id="tab-common">
+                            <link rel="import" href="admin-dataform-tab-common.html?__inline">
+                        </div>
+                        <!--基础控件/-->
+
+                        <!--下拉框-->
+						<div class="tab-pane " id="tab-select">
+                            <link rel="import" href="admin-dataform-tab-select.html?__inline">
+                        </div>
+                        <!--下拉框/-->
+
+                        <!--日期控件-->
+						<div class="tab-pane " id="tab-date">
+                            <link rel="import" href="admin-dataform-tab-date.html?__inline">
+                        </div>
+                        <!--日期控件/-->
+
+                        <!--树表格-->
+						<div class="tab-pane " id="tab-treetable">
+                            <link rel="import" href="admin-dataform-tab-treetable.html?__inline">
+                        </div>
+                        <!--树表格/-->
+
+                        <!--编辑器-->
+						<div class="tab-pane " id="tab-editer">
+                            <link rel="import" href="admin-dataform-tab-editer.html?__inline">
+                        </div>
+                        <!--编辑器/-->
+
+                        <!--模态窗口-->
+						<div class="tab-pane " id="tab-model">
+                            <link rel="import" href="admin-dataform-tab-model.html?__inline">
+                        </div>
+                        <!--模态窗口/-->
+
+                    </div>
+                    <!--tab内容/-->
+                    
+                </div>
+                <!--tab页/-->
+
+
+        <!-- .box-footer
+        <div class="box-footer"></div>
+        -->
+        <!-- /.box-footer-->
+
+        </div>
+
+    </section>
+    <!-- 正文区域 /-->
+
+</div>
+
+<script>
+$(document).ready(function(){
+
+    // 激活导航位置
+    setSidebarActive("admin-dataform");
+
+});
+</script>
+
+<!-- @@close -->

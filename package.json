@@ -1,0 +1,30 @@
+{
+  "name": "AdminLTE2-itcast-fis3",
+  "version": "1.0.0",
+  "description": "AdminLTE2 传智播客定制版 ",
+  "main": "index.js",
+  "scripts": {
+    "start": "fis3 server start && node fis-plus && fis3 release -wL",
+    "release": "fis3 release && node fis-plus",
+    "dist": "fis3 release -d ./release && gulp del && gulp cp && gulp htmlbeautify",
+    "open": "fis3 server open",
+    "watch": "fis3 release -cw",
+    "clear": "fis3 release -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://docafe@git.oschina.net/docafe/adminlte2-itcast.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "copy-dir": "^0.3.0",
+    "del": "^2.2.2",
+    "fis-parser-node-sass": "^1.0.1",
+    "fis3-parser-html-ejs": "^1.0.3",
+    "gulp": "^3.9.1",
+    "gulp-html-beautify": "^1.0.1",
+    "gulp-html-extend": "^1.1.6",
+    "gulp-htmlmin": "^3.0.0"
+  }
+}

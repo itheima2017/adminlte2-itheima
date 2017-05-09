@@ -1,0 +1,112 @@
+<div class="row data-type">
+
+    <div class="col-md-2 title">文本</div>
+    <div class="col-md-4 data">
+        <input type="text" class="form-control" placeholder="文本" value="">
+    </div>
+
+    <div class="col-md-2 title">密码</div>
+    <div class="col-md-4 data">
+        <input type="password" class="form-control" placeholder="密码" value="">
+    </div>
+
+    <div class="col-md-2 title">用户名</div>
+    <div class="col-md-4 data">
+        <div class="input-group">
+            <span class="input-group-addon">@</span>
+            <input type="text" class="form-control" placeholder="用户名">
+        </div>
+    </div>
+
+    <div class="col-md-2 title">整数</div>
+    <div class="col-md-4 data">
+        <div class="input-group">
+            <input type="text" class="form-control">
+            <span class="input-group-addon">.00</span>
+        </div>
+    </div>
+
+    <div class="col-md-2 title">货币</div>
+    <div class="col-md-4 data">
+        <div class="input-group">
+            <span class="input-group-addon">¥</span>
+            <input type="text" class="form-control">
+            <span class="input-group-addon">.00</span>
+        </div>
+    </div>
+
+    <div class="col-md-2 title">图标输入框</div>
+    <div class="col-md-4 data">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-address-book"></i></span>
+            <input type="text" class="form-control" placeholder="请输入...">
+        </div>
+    </div>
+
+    <div class="col-md-2 title">多选checkbox</div>
+    <div class="col-md-10 data line-height36">
+        <div class="form-group form-inline">
+            <div class="checkbox"><label><input type="checkbox" value="1"> 选项1</label></div>
+            <div class="checkbox"><label><input type="checkbox" value="2"> 选项2</label></div>
+            <div class="checkbox"><label><input type="checkbox" value="3"> 选项3</label></div>
+            <div class="checkbox"><label><input type="checkbox" value="4"> 选项4</label></div>
+            <div class="checkbox"><label><input type="checkbox" value="5"> 选项5</label></div>
+        </div>
+    </div>
+
+    <div class="col-md-2 title">多选radio</div>
+    <div class="col-md-10 data">
+        <div class="form-group form-inline">
+            <div class="radio"><label><input type="radio" name="optionsRadios" value="1"> 选项1</label></div>
+            <div class="radio"><label><input type="radio" name="optionsRadios" value="2"> 选项2</label></div>
+            <div class="radio"><label><input type="radio" name="optionsRadios" value="3"> 选项3</label></div>
+            <div class="radio"><label><input type="radio" name="optionsRadios" value="4"> 选项4</label></div>
+            <div class="radio"><label><input type="radio" name="optionsRadios" value="5"> 选项5</label></div>
+        </div>
+    </div>
+
+    <div class="col-md-2 title">文件上传</div>
+    <div class="col-md-10 data">
+        <a href="javascript:;" class="a-upload">
+            <input type="file" name="" id="">点击这里上传文件
+        </a>
+    </div>
+
+    <div class="col-md-2 title rowHeight2x">内容输入框</div>
+    <div class="col-md-10 data rowHeight2x">
+        <textarea class="form-control" rows="3" placeholder="请输入..."></textarea>
+    </div>
+
+    <div class="col-md-2 title">颜色选取</div>
+    <div class="col-md-4 data">
+        <input type="text" class="form-control my-colorpicker1">
+    </div>
+
+    <div class="col-md-2 title">颜色选取[选取按钮]</div>
+    <div class="col-md-4 data">
+        <div class="input-group my-colorpicker2">
+            <input type="text" class="form-control">
+            <div class="input-group-addon"><i class="fa fa-circle-thin"></i></div>
+        </div>
+    </div>
+
+    <div class="col-md-2 title "></div>
+    <div class="col-md-10 data text-center">
+        <button type="button" class="btn bg-maroon ">保存</button>
+        <button type="button" class="btn bg-default " onclick='javascript:history.back(-1);'>返回</button>
+    </div>
+
+</div>
+
+
+<script>
+
+$(document).ready(function(){
+
+    // 颜色选取器
+    $(".my-colorpicker1").colorpicker();
+    $(".my-colorpicker2").colorpicker();
+
+});
+
+</script>

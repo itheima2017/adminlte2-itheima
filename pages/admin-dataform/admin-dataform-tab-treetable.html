@@ -1,0 +1,84 @@
+<table id="collapse-table" class="table table-bordered table-hover dataTable">
+    <thead>
+        <tr>
+            <th>流量来源</th>
+            <th>浏览量</th>
+            <th>浏览量占比</th>
+        </tr>
+    </thead>
+    <tr>
+        <td>总计</td>
+        <td>732，191，5</td>
+        <td>100%</td>
+    </tr>
+    <tr data-tt-id="0">
+        <td>自主访问</td>
+        <td>12345</td>
+        <td>8%</td>
+    </tr>
+
+    <tbody>
+
+        <tr data-tt-id="1" data-tt-parent-id="0">
+            <td>我的京东</td>
+            <td>1211</td>
+            <td>3%</td>
+        </tr>
+        <tr data-tt-id="1-1" data-tt-parent-id="1">
+            <td>我的京东一</td>
+            <td>1211</td>
+            <td>3%</td>
+        </tr>
+        <tr data-tt-id="1-2" data-tt-parent-id="1">
+            <td>我的京东二</td>
+            <td>1211</td>
+            <td>3%</td>
+        </tr>
+
+        <tr data-tt-id="2" data-tt-parent-id="0">
+            <td>购物车</td>
+            <td>11134</td>
+            <td>5%</td>
+        </tr>
+        <tr data-tt-id="2-1" data-tt-parent-id="2">
+            <td>购物车一</td>
+            <td>1211</td>
+            <td>3%</td>
+        </tr>
+        <tr data-tt-id="2-2" data-tt-parent-id="2">
+            <td>购物车二</td>
+            <td>1211</td>
+            <td>3%</td>
+        </tr>
+
+        <tr data-tt-id="3">
+            <td>负责流量</td>
+            <td>12345</td>
+            <td>8%</td>
+        </tr>
+        <tr data-tt-id="3-1" data-tt-parent-id="3">
+            <td>负责流量一</td>
+            <td>12345</td>
+            <td>8%</td>
+        </tr>
+        <tr data-tt-id="3-1" data-tt-parent-id="3">
+            <td>负责流量二</td>
+            <td>12345</td>
+            <td>8%</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<script>
+
+$(document).ready(function(){
+
+    /*table tree*/
+    $("#collapse-table").treetable({
+        expandable: true
+    });
+
+});
+
+</script>

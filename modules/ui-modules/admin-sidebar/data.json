@@ -1,0 +1,88 @@
+{
+    "list": [{
+            "session": "后台标准页面",
+            "icon": "fa-folder",
+            "items": [
+                {
+                    "title": "登录",
+                    "model": "admin-login",
+                    "uri": "admin-login"
+                },
+                {
+                    "title": "注册",
+                    "model": "admin-register",
+                    "uri": "admin-register"
+                },
+                {
+                    "title": "404页",
+                    "model": "admin-404",
+                    "uri": "admin-404"
+                },
+                {
+                    "title": "500页",
+                    "model": "admin-500",
+                    "uri": "admin-500"
+                },
+                {
+                    "title": "空白页",
+                    "model": "admin-blank",
+                    "uri": "admin-blank"
+                },
+                {
+                    "title": "数据列表页",
+                    "model": "admin-datalist",
+                    "uri": "admin-datalist"
+                },
+                {
+                    "title": "表单页",
+                    "model": "admin-dataform",
+                    "uri": "admin-dataform"
+                }
+            ]
+        },
+        {
+            "session": "订单管理",
+            "icon": "fa-cube",
+            "items": [{
+                    "title": "全部订单",
+                    "model": "order-manage",
+                    "uri": "order-manage-list"
+                },
+                {
+                    "title": "退款",
+                    "model": "order-cancel",
+                    "uri": "order-cancel-list"
+                }
+            ]
+        },
+        {
+            "session": "游记管理",
+            "icon": "fa-book",
+            "items": [{
+                    "title": "游记列表",
+                    "model": "travellog-manage",
+                    "uri": "travellog-manage-list"
+                },
+                {
+                    "title": "游记点评",
+                    "model": "travellog-review",
+                    "uri": "travellog-review-list"
+                },
+                {
+                    "title": "游记设置",
+                    "model": "travellog-setting",
+                    "uri": "travellog-setting-edit"
+                }
+            ]
+        },
+        {
+            "session": "系统管理",
+            "icon": "fa-cogs",
+            "items": [{
+                "title": "系统设置",
+                "model": "system-setting",
+                "uri": "system-setting-edit"
+            }]
+        }
+    ]
+}

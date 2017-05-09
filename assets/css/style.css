@@ -1,0 +1,145 @@
+/* tab 1*/
+.double {
+	line-height: 58px;
+}
+.title .glyphicon{
+	padding: 3px;
+	font-size: 13px;
+    border-radius: 8px;
+    color: #fff;
+	
+}
+.data span.arrowup {
+	color: #d88918;
+}
+.data span.arrowdown {
+	color: #6bb10a;
+}
+.item-blue .glyphicon{
+	background-color: #39a9ea;
+}
+.item-green {
+	line-height: 58px;
+}
+.item-green .glyphicon{
+	background-color: #6bb10a;
+	line-height: 12px;
+}
+.item-orange .glyphicon{
+	background-color:#d88918;
+}
+.item-red .glyphicon{
+	background-color: #f14f4f;
+}
+.chart .chart-box {
+	margin: 10px;
+}
+
+/* 数据表格label */
+.content-wrapper .data-type {
+	/*width: 90%;*/
+	margin: 10px 5px;
+	border:1px solid #d4d4d4;
+	border-radius: 2px;
+}
+.data-type .title,
+.data-type .data {
+	padding: 3px 12px;
+	border-top: 1px solid #d4d4d4;
+	overflow: hidden;
+    height: 42px;
+}
+.data-type .title {
+    line-height: 34px;
+	border-right: 1px solid #d4d4d4;
+}
+
+.data-type .data:last-child{
+	border-right: 0;
+}
+.data-type .title{
+	text-align: center;
+	background: #ececec;
+}
+.data-type .data .line{
+	vertical-align: middle;
+	overflow: hidden;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+/* label行高度 */
+.data-type .data > label {
+	line-height:36px;
+}
+.data-type .data > .form-group {
+	line-height:36px;
+}
+.data-type .data.text {
+	line-height:36px;
+}
+/* label行分隔符 */
+.data-type .data.border-right {
+	border-right: 1px solid #d4d4d4;
+}
+
+/* 表格双倍高度 */
+.data-type .title.rowHeight2x,
+.data-type .data.rowHeight2x {
+	height:84px;
+}
+.data-type .title.rowHeight2x ,
+.data-type .data.rowHeight2x.text {
+	line-height:78px;
+}
+/*.data-type .data.rowHeight2x > label {
+	line-height:78px;
+}*/
+.data-type .title.editer,
+.data-type .data.editer {
+	height:320px;
+}
+.data-type .title.editer {
+	line-height:300px;
+}
+
+/*清除parding*/
+.padding-clear {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+/* 文件上传 */
+/*a  upload */
+.a-upload {
+    padding: 4px 10px;
+    height: 35px;
+    line-height: 25px;
+    position: relative;
+    cursor: pointer;
+    color: #888;
+    background: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1
+}
+.a-upload  input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer
+}
+.a-upload:hover {
+    color: #444;
+    background: #eee;
+    border-color: #ccc;
+    text-decoration: none
+}
+
+

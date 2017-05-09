@@ -1,0 +1,43 @@
+<div class="row data-type">
+
+    <div class="col-md-2 title editer">WYSIHTML5</div>
+    <div class="col-md-10 data editer">
+        <textarea class="textarea" placeholder="轻量级编辑器，适合文字编辑" style="width: 100%; height: 265px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+    </div>
+
+    <div class="col-md-2 title editer">Markdown</div>
+    <div class="col-md-10 data editer">
+        <textarea id="markdown-textarea" name="content" rows="13"></textarea>
+    </div>
+
+    <div class="col-md-2 title editer">CK Editor</div>
+    <div class="col-md-10 data editer">
+        <textarea id="editor1" name="editor1" rows="10" cols="80">
+            专业级内容编辑器, 适用强文字编辑应用
+        </textarea>
+    </div>
+
+</div> 
+
+
+
+
+<script>
+
+$(document).ready(function(){
+
+    CKEDITOR.replace('editor1');
+    
+    // $(".textarea").wysihtml5({
+    //     locale:'zh-CN'
+    // });
+
+    $("#markdown-textarea").markdown({
+        language:'zh',
+        autofocus:false,
+        savable:false
+    });
+
+});
+
+</script>

@@ -1,0 +1,53 @@
+<div class="row data-type">
+<div class="col-md-2 title">ID</div>
+<div class="col-md-10 data text">
+    xxxxx
+</div>
+
+<div class="col-md-2 title">游记名称</div>
+<div class="col-md-10 data">
+    <input type="text" class="form-control" placeholder="游记名称" value="">
+</div>
+
+<div class="col-md-2 title">会员</div>
+<div class="col-md-10 data">
+    <input type="text" class="form-control" placeholder="会员" value="">
+</div>
+
+<div class="col-md-2 title rowHeight2x">点评内容</div>
+<div class="col-md-10 data rowHeight2x">
+    <textarea class="form-control" rows="3" placeholder="点评内容"></textarea>
+</div>
+
+<div class="col-md-2 title">日期</div>
+<div class="col-md-10 data">
+    <div class="input-group date">
+        <div class="input-group-addon">
+        <i class="fa fa-calendar"></i>
+        </div>
+        <input type="text" class="form-control pull-right" id="datepicker-a5">
+    </div>
+</div>
+<script>
+$(document).ready(function(){
+    $('#datepicker-a5').datepicker({
+        autoclose: true,
+        language:'zh-CN'
+    });
+});
+</script>
+
+<div class="col-md-2 title">审核</div>
+<div class="col-md-10 data">
+    <select class="form-control">
+        <option>开启</option>
+        <option>屏蔽</option>
+    </select>
+</div>
+
+<div class="col-md-2 title "></div>
+  <div class="col-md-10 data text-center">
+  <button type="button" class="btn bg-maroon ">保存</button>
+  <button type="button" class="btn bg-default " onclick="javascript:history.back(-1);">返回</button>
+</div>
+</div>
