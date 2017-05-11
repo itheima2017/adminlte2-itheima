@@ -1,6 +1,6 @@
 {
     "list": [{
-            "session": "后台标准页面",
+            "session": "后台通用页面",
             "icon": "fa-folder",
             "items": [
                 {
@@ -41,7 +41,87 @@
             ]
         },
         {
-            "session": "订单管理",
+            "session": "图表Charts",
+            "icon": "fa-pie-chart",
+            "items": [{
+                    "title": "ChartJS",
+                    "model": "charts-chartjs",
+                    "uri": "charts-chartjs"
+                },
+                {
+                    "title": "Morris Charts",
+                    "model": "charts-morris",
+                    "uri": "charts-morris"
+                },
+                {
+                    "title": "Flot Charts",
+                    "model": "charts-flot",
+                    "uri": "charts-flot"
+                },
+                {
+                    "title": "Inline Charts",
+                    "model": "charts-inline",
+                    "uri": "charts-inline"
+                }
+            ]
+        },
+        {
+            "session": "UI界面元素",
+            "icon": "fa-laptop",
+            "items": [{
+                    "title": "标准 General",
+                    "model": "elements-general",
+                    "uri": "elements-general"
+                },
+                {
+                    "title": "图标 Icons",
+                    "model": "elements-icons",
+                    "uri": "elements-icons"
+                },
+                {
+                    "title": "按钮 Buttons",
+                    "model": "elements-buttons",
+                    "uri": "elements-buttons"
+                },
+                {
+                    "title": "滑块 Sliders",
+                    "model": "elements-sliders",
+                    "uri": "elements-sliders"
+                },
+                {
+                    "title": "时间线 Timeline",
+                    "model": "elements-timeline",
+                    "uri": "elements-timeline"
+                },
+                {
+                    "title": "对话框样式 Modals",
+                    "model": "elements-modals",
+                    "uri": "elements-modals"
+                }
+            ]
+        },
+        {
+            "session": "表单 Forms",
+            "icon": "fa-edit",
+            "items": [{
+                    "title": "基础表单元素",
+                    "model": "form-general",
+                    "uri": "form-general"
+                },
+                {
+                    "title": "高级表单元素",
+                    "model": "form-advanced",
+                    "uri": "form-advanced"
+                },
+                {
+                    "title": "编辑器",
+                    "model": "form-editors",
+                    "uri": "form-editors"
+                }
+            ]
+        },
+        {
+            "session": "样例-订单管理",
             "icon": "fa-cube",
             "items": [{
                     "title": "全部订单",
@@ -56,7 +136,7 @@
             ]
         },
         {
-            "session": "游记管理",
+            "session": "样例-游记管理",
             "icon": "fa-book",
             "items": [{
                     "title": "游记列表",
@@ -76,7 +156,7 @@
             ]
         },
         {
-            "session": "系统管理",
+            "session": "样例-系统管理",
             "icon": "fa-cogs",
             "items": [{
                 "title": "系统设置",

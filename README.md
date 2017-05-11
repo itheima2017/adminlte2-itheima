@@ -1,126 +1,67 @@
 # 管理后台
 
-## 输出说明
+## 前言
 
-### 提供两种格式
+- 本后台UI界面框架，修改自 [AdminLTE2](https://almsaeedstudio.com/) ，官方 [github](https://github.com/almasaeed2010/AdminLTE) .
 
-    1. 带导航框架的 `/dist/page/all-in-one`
-    2. 单独内容的 `/dist/page/single`
+- 因为是老外的项目，用起来别扭，所以做了如下本地化处理
 
-### 目录说明
+    - 默认中文字体 `微软雅黑`
 
-```
-```
+    - 本地字体库 `font-awesome` `bootstrap-font` 避免了`翻墙`下载，打开页面长时间`白屏`问题
 
-## 常规页面
+    - 汉化常用控件 `timepicker` 、 `datepicker` 、 `daterangepicker` 、 `ckeditor` 、  `WYSIHTML5` 、 `Markdown`
 
-页面名称 | 说明
------------------------------|--------------
-admin-layout.html            | layout母版页
-admin-login.html             | 登录
-admin-register.html          | 注册
-admin-lockscreen.html        | 锁屏
-admin-404.html               | 404页
-admin-500.html               | 500页
-admin-blank.html             | 空白页
+    - 常用页面 `登录` 、 `注册` 、 `空白页` 、 `404页` 、 `500页`
 
-## 业务页面
+    - 数据表单列表样式页面 `数据列表` 、`登录`
 
-### 线路管理
+## 技术栈
 
-页面名称 | 说明
------------------------------|--------------
-admin-layout.html            | 线路列表
-admin-login.html             | 出发城市
-admin-login.html             | 点评
-admin-login.html             | 类型
-admin-login.html             | 保险
-admin-login.html             | 基本设置
+    Bootstrap + jQuery
 
-### 订单管理
+## 快速上手 - 方式一: 直接使用静态html
 
-页面名称 | 说明
------------------------------|--------------
-admin-layout.html            | 待处理
-admin-layout.html            | 待付款
-admin-layout.html            | 待出团
-admin-layout.html            | 待点评
-admin-layout.html            | 已点评
-admin-layout.html            | 已取消
-admin-layout.html            | 已完成
-admin-layout.html            | 退款
+1. 修改菜单
 
-### 会员管理
+2. 编辑正文
 
-会员列表
-短信群发
-邮件群发
+## 快速上手 - 方式二: 搭建开发环境
 
-### 帮助中心
+1. 安装环境
 
-帮助列表
-帮助分类
+2. 编辑配置
 
-### 游记管理
+3. 修改菜单
 
-游记列表
-游记点评
-游记设置
+4. 编辑正文
 
-### 广告管理
+## 高级主题 - 目录结构
 
-广告列表
-位置列表
-广告统计
+## 高级主题 - JQuery插件列表
 
-### 友链管理
+## 高级主题 - Skins皮肤
 
-友链列表
+## 高级主题 - Layout
 
-### 系统管理
+## 高级主题 - AdminLTE Javascript 选项
 
-系统设置
+## 高级主题 - 浏览器支持
 
-## Jquery插件列表
+- IE9+
+- Firefox (latest)
+- Safari (latest)
+- Chrome (latest)
+- Opera (latest)
 
-- 图表
+## 高级主题 - 组件 - 主导航顶栏
 
-```
-ChartJS
-Flot
-Morris.js
-Sparkline
-```
+## 高级主题 - 组件 - Sidebar
 
-- 表单元素
+## 高级主题 - 组件 - Info Box
 
-```
-Bootstrap Slider
-Ion Slider
-Date Picker
-Date Range Picker
-Color Picker
-Time Picker
-iCheck
-Input Mask
-```
+## 高级主题 - 组件 - Box
 
-- 编辑器
+## 高级主题 - 组件 - Loading States
 
-```
-Bootstrap WYSIHTML5
-CK Editor
-```
-
-- 其它
-
-```
-DataTables
-Full Calendar
-jQuery UI
-jQuery Knob
-jVector Map
-Slim Scroll
-Pace
-```
-
+## 高级主题 - 组件 - Direct Chat
