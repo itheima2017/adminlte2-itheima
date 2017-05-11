@@ -97,6 +97,11 @@
                     "title": "对话框样式 Modals",
                     "model": "elements-modals",
                     "uri": "elements-modals"
+                },
+                {
+                    "title": "窗体小部件 widgets",
+                    "model": "elements-widgets",
+                    "uri": "elements-widgets"
                 }
             ]
         },
@@ -117,6 +122,21 @@
                     "title": "编辑器",
                     "model": "form-editors",
                     "uri": "form-editors"
+                }
+            ]
+        },
+        {
+            "session": "表格 tables",
+            "icon": "fa-table",
+            "items": [{
+                    "title": "简单表格",
+                    "model": "tables-simple",
+                    "uri": "tables-simple"
+                },
+                {
+                    "title": "数据表格",
+                    "model": "tables-data",
+                    "uri": "tables-data"
                 }
             ]
         },
