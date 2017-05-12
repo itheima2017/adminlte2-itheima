@@ -37,6 +37,21 @@
                     "title": "表单页",
                     "model": "admin-dataform",
                     "uri": "admin-dataform"
+                },
+                {
+                    "title": "个人中心",
+                    "model": "admin-profile",
+                    "uri": "admin-profile"
+                },
+                {
+                    "title": "发票",
+                    "model": "admin-invoice",
+                    "uri": "admin-invoice"
+                },
+                {
+                    "title": "发票打印",
+                    "model": "admin-invoice-print",
+                    "uri": "admin-invoice-print"
                 }
             ]
         },
