@@ -1,0 +1,98 @@
+<div class="content-wrapper">
+
+    <!-- 内容头部 -->
+    <section class="content-header">
+        <h1>
+            系统设置
+            <small>系统设置</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="all-admin-index.html"><i class="fa fa-dashboard"></i> 首页</a></li>
+            <li class="active">系统设置</li>
+        </ol>
+    </section>
+    <!-- 内容头部 /-->
+
+    <!-- 正文区域 -->
+    <section class="content">
+
+        <div class="box-body">
+
+            <!--tab页-->
+            <div class="nav-tabs-custom">
+
+                <!--tab头-->
+                <ul class="nav nav-tabs">
+                    <li class="active">
+                        <a href="#tab-form" data-toggle="tab">系统设置</a>
+                    </li>
+                </ul>
+                <!--tab头/-->
+
+                <!--tab内容-->
+                <div class="tab-content">
+
+                    <!--基本设置-->
+                    <div class="tab-pane active" id="tab-form">
+                        <div class="row data-type">
+
+                            <div class="col-md-2 title">当前状态</div>
+                            <div class="col-md-10 data">
+                                <div class="form-group form-inline">
+                                    <div class="radio"><label><input type="radio" name="optionsRadios-a3" value="1"> 正常</label></div>
+                                    <div class="radio"><label><input type="radio" name="optionsRadios-a3" value="2"> 关闭</label></div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2 title rowHeight2x">网站关闭提示内容</div>
+                            <div class="col-md-10 data rowHeight2x">
+                                <textarea class="form-control" rows="3" placeholder="网站关闭提示内容"></textarea>
+                            </div>
+
+                            <div class="col-md-2 title rowHeight2x">过滤非法字符</div>
+                            <div class="col-md-6 data rowHeight2x">
+                                <textarea class="form-control" rows="3" placeholder="过滤非法字符"></textarea>
+                            </div>
+                            <div class="col-md-4 data rowHeight2x text">
+                                每一行一组（格式：要过滤的词=替代词 例如 你妹=**）
+                            </div>
+
+                            <div class="col-md-2 title rowHeight2x">统计代码</div>
+                            <div class="col-md-10 data rowHeight2x">
+                                <textarea class="form-control" rows="3" placeholder="统计代码"></textarea>
+                            </div>
+
+                            <div class="col-md-2 title"></div>
+                            <div class="col-md-10 data text-center">
+                                <button type="button" class="btn bg-maroon">保存</button>
+                                <button type="button" class="btn bg-default" onclick="history.back(-1);">返回</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--基本设置/-->
+
+                </div>
+                <!--tab内容/-->
+
+            </div>
+            <!--tab页/-->
+
+
+            <!-- .box-footer
+        <div class="box-footer"></div>
+        -->
+            <!-- /.box-footer-->
+
+        </div>
+
+    </section>
+    <!-- 正文区域 /-->
+
+</div>
+
+<script>
+    $(document).ready(function() {
+        // 激活导航位置
+        setSidebarActive("system-setting");
+    });
+</script>

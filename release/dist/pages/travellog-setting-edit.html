@@ -1,0 +1,96 @@
+<div class="content-wrapper">
+
+    <!-- 内容头部 -->
+    <section class="content-header">
+        <h1>
+            游记设置
+            <small>设置</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="all-admin-index.html"><i class="fa fa-dashboard"></i> 首页</a></li>
+            <li class="active">游记设置</li>
+        </ol>
+    </section>
+    <!-- 内容头部 /-->
+
+    <!-- 正文区域 -->
+    <section class="content">
+
+        <div class="box-body">
+
+            <!--tab页-->
+            <div class="nav-tabs-custom">
+
+                <!--tab头-->
+                <ul class="nav nav-tabs">
+                    <li class="active">
+                        <a href="#tab-form" data-toggle="tab">点评设置</a>
+                    </li>
+                </ul>
+                <!--tab头/-->
+
+                <!--tab内容-->
+                <div class="tab-content">
+
+                    <!--基本设置-->
+                    <div class="tab-pane active" id="tab-form">
+                        <div class="row data-type">
+
+                            <div class="col-md-2 title">游记发布</div>
+                            <div class="col-md-10 data">
+                                <div class="form-group form-inline">
+                                    <div class="radio"><label><input type="radio" name="optionsRadios" value="1"> 自动审核</label></div>
+                                    <div class="radio"><label><input type="radio" name="optionsRadios" value="2"> 手动审核</label></div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2 title">游记评论</div>
+                            <div class="col-md-10 data line-height36">
+                                <div class="form-group form-inline">
+                                    <div class="checkbox"><label><input type="checkbox" value="1"> 自动审核</label></div>
+                                    <div class="checkbox"><label><input type="checkbox" value="2"> 显示验证码</label></div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2 title">评论时限</div>
+                            <div class="col-md-1 data">
+                                <input type="text" class="form-control" placeholder="秒" value="">
+                            </div>
+                            <div class="col-md-9 data text">
+                                秒内不能重复评论
+                            </div>
+
+                            <div class="col-md-2 title"></div>
+                            <div class="col-md-10 data text-center">
+                                <button type="button" class="btn bg-maroon">保存</button>
+                                <button type="button" class="btn bg-default" onclick="history.back(-1);">返回</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--基本设置/-->
+
+                </div>
+                <!--tab内容/-->
+
+            </div>
+            <!--tab页/-->
+
+
+            <!-- .box-footer
+        <div class="box-footer"></div>
+        -->
+            <!-- /.box-footer-->
+
+        </div>
+
+    </section>
+    <!-- 正文区域 /-->
+
+</div>
+
+<script>
+    $(document).ready(function() {
+        // 激活导航位置
+        setSidebarActive("travellog-setting");
+    });
+</script>
