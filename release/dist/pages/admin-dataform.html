@@ -377,6 +377,16 @@
                                 </div>
                             </div>
 
+                            <div class="col-md-2 title">日期时间[单选]</div>
+                            <div class="col-md-4 data">
+                                <div class="input-group date">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-calendar"></i>
+                                    </div>
+                                    <input type="text" class="form-control pull-right" id="dateTimePicker">
+                                </div>
+                            </div>
+
                             <div class="col-md-2 title">日期[区间]</div>
                             <div class="col-md-4 data">
                                 <div class="input-group">
@@ -420,6 +430,14 @@
                                 //Date picker
                                 $('#datepicker').datepicker({
                                     autoclose: true,
+                                    language: 'zh-CN'
+                                });
+
+                                // datetime picker
+                                $('#dateTimePicker').datetimepicker({
+                                    format: "mm/dd/yyyy - hh:ii",
+                                    autoclose: true,
+                                    todayBtn: true,
                                     language: 'zh-CN'
                                 });
 
