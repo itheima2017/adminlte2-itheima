@@ -32,7 +32,7 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label>Minimal</label>
-                            <select class="form-control select2" style="width: 100%">
+                            <select class="form-control select2" style="width: 100%;">
                   <option selected="selected">Alabama</option>
                   <option>Alaska</option>
                   <option>California</option>
@@ -45,7 +45,7 @@
                         <!-- /.form-group -->
                         <div class="form-group">
                             <label>Disabled</label>
-                            <select class="form-control select2" disabled="disabled" style="width: 100%">
+                            <select class="form-control select2" disabled="disabled" style="width: 100%;">
                   <option selected="selected">Alabama</option>
                   <option>Alaska</option>
                   <option>California</option>
@@ -61,7 +61,7 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label>Multiple</label>
-                            <select class="form-control select2" multiple="multiple" data-placeholder="Select a State" style="width: 100%">
+                            <select class="form-control select2" multiple="multiple" data-placeholder="Select a State" style="width: 100%;">
                   <option>Alabama</option>
                   <option>Alaska</option>
                   <option>California</option>
@@ -74,7 +74,7 @@
                         <!-- /.form-group -->
                         <div class="form-group">
                             <label>Disabled Result</label>
-                            <select class="form-control select2" style="width: 100%">
+                            <select class="form-control select2" style="width: 100%;">
                   <option selected="selected">Alabama</option>
                   <option>Alaska</option>
                   <option disabled="disabled">California (disabled)</option>
@@ -243,6 +243,20 @@
                                     <i class="fa fa-calendar"></i>
                                 </div>
                                 <input type="text" class="form-control pull-right" id="datepicker">
+                            </div>
+                            <!-- /.input group -->
+                        </div>
+                        <!-- /.form group -->
+
+                        <!-- DateTime -->
+                        <div class="form-group">
+                            <label>Date Time:</label>
+
+                            <div class="input-group date">
+                                <div class="input-group-addon">
+                                    <i class="fa fa-calendar"></i>
+                                </div>
+                                <input type="text" class="form-control pull-right" id="dateTimePicker">
                             </div>
                             <!-- /.input group -->
                         </div>
@@ -487,7 +501,12 @@
         //Date picker
         $('#datepicker').datepicker({
             autoclose: true,
-            language: 'zh-CN'
+            format: 'mm/dd/yyyy'
+        });
+
+        // datetime picker
+        $('#dateTimePicker').datetimepicker({
+            format: 'MM/DD/YYYY hh:mm A'
         });
 
         //iCheck for checkbox and radio inputs

@@ -6,7 +6,7 @@
   "scripts": {
     "start": "fis3 server start && node fis-plus && fis3 release -wL",
     "release": "fis3 release && node fis-plus",
-    "dist": "fis3 release -d ./release && gulp del && gulp cp && gulp htmlbeautify",
+    "build": "fis3 release -d ./release && gulp del && gulp cp && gulp htmlbeautify",
     "open": "fis3 server open",
     "watch": "fis3 release -cw",
     "clear": "fis3 release -c"

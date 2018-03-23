@@ -249,6 +249,20 @@
               </div>
               <!-- /.form group -->
 
+              <!-- DateTime -->
+              <div class="form-group">
+                <label>Date Time:</label>
+
+                <div class="input-group date">
+                  <div class="input-group-addon">
+                    <i class="fa fa-calendar"></i>
+                  </div>
+                  <input type="text" class="form-control pull-right" id="dateTimePicker">
+                </div>
+                <!-- /.input group -->
+              </div>
+              <!-- /.form group -->
+
               <!-- Date range -->
               <div class="form-group">
                 <label>Date range:</label>
@@ -485,7 +499,12 @@
     //Date picker
     $('#datepicker').datepicker({
       autoclose: true,
-      language:'zh-CN'
+      format: 'mm/dd/yyyy'
+    });
+
+    // datetime picker
+    $('#dateTimePicker').datetimepicker({
+      format: 'MM/DD/YYYY hh:mm A'
     });
 
     //iCheck for checkbox and radio inputs
